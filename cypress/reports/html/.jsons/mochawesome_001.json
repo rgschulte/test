@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-09T00:22:11.975Z",
+    "end": "2024-07-09T00:22:15.188Z",
+    "duration": 3213,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bfdc4af3-94fb-4b89-b275-9d5f21105664",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f670fc24-901f-451f-b6fb-7cb4ca3f548c",
+          "title": "Login Scenario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with Valid Credentials (Qase ID: 1)",
+              "fullTitle": "Login Scenario Login with Valid Credentials (Qase ID: 1)",
+              "timedOut": null,
+              "duration": 1901,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.clearCookies();\ncy.visit('https://www.saucedemo.com/');\n_homepage.default.typeEmail('standard_user');\n_homepage.default.typePassword('secret_sauce');\n_homepage.default.clickBtnLogin();\n_homepage.default.validateUserLogin();",
+              "err": {},
+              "uuid": "c0a8dd98-d56a-4a37-914a-734d5372728c",
+              "parentUUID": "f670fc24-901f-451f-b6fb-7cb4ca3f548c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c0a8dd98-d56a-4a37-914a-734d5372728c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1901,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
